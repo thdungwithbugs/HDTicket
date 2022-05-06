@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.carousel {
+  text-align: center;
+}
+.carousel .thumb {
+  height: 50px;
+  border-radius: 5px;
+}
+.carousel .thumb img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+  user-select: none;
+}
+textarea {
+  width: 300px;
+  height: 150px;
+}
+tr,
+td {
+  padding: 5px;
+}
+tr:hover {
+  background-color: #ffcfd2;
+}
+.ant-form-item-label > label{
+  color: rgb(147 51 234) !important;
+  font-weight: 600 !important;
+  font-size: 1.125rem !important;
+}
+.ant-form-item:first-child{
+  margin-top: 20px;
+  margin-bottom: 10px;
+} 
+.mantine-Navbar-root.mantine-14pt2eo {
+  height: fit-content !important;
+}
+.ant-pagination-item-link{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
