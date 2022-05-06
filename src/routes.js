@@ -11,14 +11,6 @@ const routes = [
     path: "/movies",
     children: [
       {
-        path: "now-showing",
-        element: lazy(() => import("./modules/Movies/pages/MovieShowing")),
-      },
-      {
-        path: "coming-soon",
-        element: lazy(() => import("./modules/Movies/pages/MovieComming")),
-      },
-      {
         path: ":movieId",
         element: lazy(() => import("./modules/Movies/pages/MovieDetails")),
       },

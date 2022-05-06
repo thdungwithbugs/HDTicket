@@ -1,5 +1,5 @@
 // libs
-import './App.css';
+import "./App.css";
 import { lazy, Suspense } from "react";
 import { Routes, Route, useRoutes } from "react-router-dom";
 import { Global } from "@emotion/react";
@@ -17,8 +17,7 @@ import AdminLayout from "components/AdminLayout";
 const HomePage = lazy(() => import("./modules/Home/pages/HomePage"));
 const LoginPage = lazy(() => import("./modules/Auth/pages/Login"));
 const RegisterPage = lazy(() => import("./modules/Auth/pages/Register"));
-const MovieShowing = lazy(() => import("./modules/Movies/pages/MovieShowing"));
-const MovieComming = lazy(() => import("./modules/Movies/pages/MovieComming"));
+
 const MovieDetails = lazy(() => import("./modules/Movies/pages/MovieDetails"));
 const Booking = lazy(() => import("modules/Checkout/pages/Booking"));
 const NotFound = lazy(() => import("./components/NotFound"));
@@ -26,9 +25,9 @@ const NotFound = lazy(() => import("./components/NotFound"));
 const MovieList = lazy(() => import("modules/MovieManagement/MovieList"));
 const AddMovie = lazy(() => import("modules/MovieManagement/AddMovie"));
 const UpdateMovie = lazy(() => import("modules/MovieManagement/UpdateMovie"));
-const User = lazy(()=>import("modules/UserManagement/User"))
-const UpdateUser = lazy (()=>import("modules/UserManagement/UpdateUser"))
-const ShowTime = lazy(()=>import("modules/MovieManagement/ShowTime"))
+const User = lazy(() => import("modules/UserManagement/User"));
+const UpdateUser = lazy(() => import("modules/UserManagement/UpdateUser"));
+const ShowTime = lazy(() => import("modules/MovieManagement/ShowTime"));
 
 function App() {
   let element = useRoutes(routes);
@@ -40,8 +39,6 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/movies">
-            <Route path="now-showing" element={<MovieShowing />} />
-            <Route path="coming-soon" element={<MovieComming />} />
             <Route path=":movieId" element={<MovieDetails />} />
           </Route>
           <Route
@@ -52,7 +49,7 @@ function App() {
               </UserProtect>
             }
           />
-          <Route path="/admin" element={<AdminLayout/>}>
+          <Route path="/admin" element={<AdminLayout />}>
             <Route
               path="movie-list"
               element={
@@ -81,7 +78,7 @@ function App() {
               path="showtimes/:id"
               element={
                 <AdminProtect>
-                  <ShowTime/>
+                  <ShowTime />
                 </AdminProtect>
               }
             />
@@ -89,7 +86,7 @@ function App() {
               path="users"
               element={
                 <AdminProtect>
-                  <User/>
+                  <User />
                 </AdminProtect>
               }
             />
@@ -97,7 +94,7 @@ function App() {
               path="update-user/:id"
               element={
                 <UpdateUser>
-                  <User/>
+                  <User />
                 </UpdateUser>
               }
             />
