@@ -1,4 +1,5 @@
 // libs
+import './App.css';
 import { lazy, Suspense } from "react";
 import { Routes, Route, useRoutes } from "react-router-dom";
 import { Global } from "@emotion/react";

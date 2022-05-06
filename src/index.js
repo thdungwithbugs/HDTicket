@@ -4,7 +4,6 @@ import "./index.css";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import App from "./App";
 import store from "./store";
 import reportWebVitals from "./reportWebVitals";
 import 'antd/dist/antd.min.css';
@@ -12,6 +11,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 //Real-time config
 import * as signalR from '@aspnet/signalr'
+import App from "./App";
 
 // https://movienew.cybersoft.edu.vn/DatVeHub/
 export const connection = new signalR.HubConnectionBuilder().withUrl("https://movienew.cybersoft.edu.vn/DatVeHub").configureLogging(signalR.LogLevel.Information).build();
