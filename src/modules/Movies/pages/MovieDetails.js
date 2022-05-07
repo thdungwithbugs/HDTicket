@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Button, Modal, Tabs } from "antd";
 import { NavLink, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { getMovieDetails } from "../slices/movieDetails";
@@ -8,7 +9,6 @@ import { CustomCard } from "@tsamantanis/react-glassmorphism";
 import "@tsamantanis/react-glassmorphism/dist/index.css";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import { Button, Modal, Tabs } from "antd";
 import moment from "moment";
 
 const { TabPane } = Tabs;
