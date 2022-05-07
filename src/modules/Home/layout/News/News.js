@@ -67,7 +67,7 @@ const News = () => {
                     />
                   </a>
                   <h1 className="text-purple-600 font-bold text-2xl">
-                    Phim 'Nghề siêu dễ' thu 10 tỷ đồng một ngày
+                    Phim 'Nghề siêu dễ' thu 10 tỷ đồng trong một ngày
                   </h1>
                   <p>
                     Theo đại diện CJ - đơn vị phát hành, phim dẫn đầu phòng vé
@@ -87,7 +87,7 @@ const News = () => {
                     />
                   </a>
                   <h1 className="text-purple-600 font-bold text-2xl">
-                    Loạt phim ra rạp tháng 5
+                    Loạt phim hot sắp ra rạp tháng 5, ra rạp xem gì đây
                   </h1>
                   <p>
                     Bom tấn Hollywood "Doctor Strange 2" cùng các phim của Lý
