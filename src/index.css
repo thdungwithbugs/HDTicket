@@ -1,6 +1,11 @@
+/* @import "~antd/dist/antd.css"; */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "~antd/dist/antd.css";
+
 
 .carousel {
   text-align: center;
@@ -34,19 +39,19 @@ td {
 tr:hover {
   background-color: #ffcfd2;
 }
-.ant-form-item-label > label{
+.ant-form-item-label > label {
   color: rgb(147 51 234) !important;
   font-weight: 600 !important;
   font-size: 1.125rem !important;
 }
-.ant-form-item:first-child{
+.ant-form-item:first-child {
   margin-top: 20px;
   margin-bottom: 10px;
-} 
+}
 .mantine-Navbar-root.mantine-14pt2eo {
   height: fit-content !important;
 }
-.ant-pagination-item-link{
+.ant-pagination-item-link {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
