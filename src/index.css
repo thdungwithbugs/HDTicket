@@ -4,9 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "~antd/dist/antd.css";
-
-
 .carousel {
   text-align: center;
 }
