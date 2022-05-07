@@ -20,8 +20,8 @@ export const getShowing = createAsyncThunk(
 );
 export const getPhimDangChieu = createAsyncThunk(
   "home/movie/getShowing/getPhimDangChieu",
-  async () => {
-    const dataGet = await getMovieShowing();
+  async (tenPhim='') => {
+    const dataGet = await getMovieShowing(tenPhim);
     let dataClone = dataGet;
     let data = {
       data: "",
@@ -33,8 +33,8 @@ export const getPhimDangChieu = createAsyncThunk(
 );
 export const getPhimSapChieu = createAsyncThunk(
   "home/movie/getShowing/getPhimSapChieu",
-  async () => {
-    const dataGet = await getMovieShowing();
+  async (tenPhim='') => {
+    const dataGet = await getMovieShowing(tenPhim);
     let dataClone = dataGet;
     let data = {
       data: "",

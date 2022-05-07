@@ -4,7 +4,7 @@ import { ThongTinDatVe } from "models/ThongTinDatVe";
 import axios from "./axiosClient";
 
 export const getMovieShowing = (tenPhim) => {
-  if (tenPhim.trim() !== "") {
+  if (tenPhim !== "") {
     return axios.get(
       `QuanLyPhim/LayDanhSachPhim?maNhom=GP13&tenPhim=${tenPhim}`
     );
